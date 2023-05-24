@@ -63,6 +63,8 @@ body {
     }
 
     .country-icons {
+        display: flex;
+        align-items: center;
         float: right;
         list-style-type: none;
         margin: 0;

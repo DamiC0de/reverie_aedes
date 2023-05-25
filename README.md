@@ -8,15 +8,18 @@ https://github.com/DamiC0de/reverie_aedes/assets/129832702/a42d7f70-665d-42b7-8c
 
 ## Première connexion 1.1
 
-![how_does_it_works](https://github.com/DamiC0de/reverie_aedes/assets/129832702/f43458dd-a868-435f-a9f3-962c20d055d8)
+![Page Première connexion, étape 1](https://github.com/DamiC0de/reverie_aedes/assets/129832702/3a716646-6129-4fe2-9158-cc08f3afc777)
+
 
 ## Première connexion 1.2
 
-![how_does_it_works_2](https://github.com/DamiC0de/reverie_aedes/assets/129832702/455318ee-19aa-43ed-844f-20f9b4cef248)
+![Page Première connexion, étape 2](https://github.com/DamiC0de/reverie_aedes/assets/129832702/1b649aa3-0ac2-4e0e-ba7c-6b9db2df48e8)
+
 
 ## Première connexion 1.3
 
-![how_does_it_works_3](https://github.com/DamiC0de/reverie_aedes/assets/129832702/d7d90ab7-c84e-489d-aa03-dcc798a71b98)
+![Page Première connexion, étape3](https://github.com/DamiC0de/reverie_aedes/assets/129832702/ec6c48bb-b2d0-43cc-a5f0-a842653437f0)
+
 
 ## Page de connexion
 

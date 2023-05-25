@@ -49,7 +49,7 @@ Toute compétence sera la bienvenue pour réaliser ce projet
 
 ## Écran de chargement
 
-![Bardic_Reveries ](https://github.com/DamiC0de/reverie_aedes/assets/129832702/fe1e96fa-881c-4915-9b67-1704ff39f151)
+![loading](https://github.com/DamiC0de/reverie_aedes/assets/129832702/c5b1a1cb-a76c-4c75-9bf5-f1bd41b379c8)
 
 ## Première connexion 1.1
 

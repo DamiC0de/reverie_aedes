@@ -44,3 +44,38 @@ Toute compétence sera la bienvenue pour réaliser ce projet
 * Options de personnalisation plus détaillées (nom des personnages, objet fétiche, etc.)
 * Fonctionnalité de partage des histoires avec d'autres utilisateurs
 
+
+## Aperçu
+
+### Écran de chargement
+
+![loading](https://github.com/DamiC0de/reverie_aedes/assets/129832702/c5b1a1cb-a76c-4c75-9bf5-f1bd41b379c8)
+
+### Première connexion 1.1
+
+![Page Première connexion, étape 1](https://github.com/DamiC0de/reverie_aedes/assets/129832702/3a716646-6129-4fe2-9158-cc08f3afc777)
+
+
+### Première connexion 1.2
+
+![Page Première connexion, étape 2](https://github.com/DamiC0de/reverie_aedes/assets/129832702/1b649aa3-0ac2-4e0e-ba7c-6b9db2df48e8)
+
+
+### Première connexion 1.3
+
+![Page Première connexion, étape3](https://github.com/DamiC0de/reverie_aedes/assets/129832702/ec6c48bb-b2d0-43cc-a5f0-a842653437f0)
+
+
+### Page de connexion
+
+![Page de connexion](https://github.com/DamiC0de/reverie_aedes/assets/129832702/27d2ace7-5be9-4740-8843-c52827fce3ed)
+
+### Page d'accueil
+
+![Page d'accueil](https://github.com/DamiC0de/reverie_aedes/assets/129832702/e718d1d1-17f1-4bcb-95ff-9479d273d40e)
+
+### Nouvelle histoire
+
+![Nouvelle Histoire](https://github.com/DamiC0de/reverie_aedes/assets/129832702/327bca2b-44fd-41a5-b330-c92f928fcd0e)
+
+

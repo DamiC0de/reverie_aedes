@@ -8,6 +8,8 @@ gem 'faker'
 gem "openai"
 gem "dotenv"
 
+gem 'rest-client'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 

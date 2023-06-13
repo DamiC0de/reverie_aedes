@@ -1,7 +1,11 @@
+require 'rest_client'
+require 'dotenv'
+Dotenv.load
+
 class Story < ApplicationRecord
     belongs_to :user
-    require 'dotenv'
-    Dotenv.load
+    
+    
 
     def generate_content
         input = generate_openai_input

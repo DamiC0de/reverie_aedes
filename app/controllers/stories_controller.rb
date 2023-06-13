@@ -6,13 +6,15 @@ class StoriesController < ApplicationController
     end
   
     def create
-      @story = Story.new(story_params)
-      if @story.save
-        redirect_to @story
-      else
-        render 'new'
+        @story = current_user.stories.new(story_params)
+        @story.content = @story.generate_content
+        if @story.save
+          redirect_to @story
+        else
+          render 'new'
+        end
       end
-    end
+      
   
     def show
       @story = Story.find(params[:id])

@@ -12,10 +12,10 @@ puts "deleted stories"
 print "Creating 10 stories"
 
 10.times do
-    name = Faker::Name:.first_name
+    name = Faker::Name.first_name
     object = Faker::Games::Minecraft.item
     title = "#{name} and the #{object}"
-    Story.create(title: title,theme:"fantasy",age: rand(5..10),name: name,fav_object: object, content: Faker::Lorem.sentences  ,user:User.find(1),secondary_character: Faker::Name:.first_name)
+    Story.create(title: title,theme:"fantasy",age: rand(5..10),name: name,fav_object: object, content: Faker::Lorem.sentences  ,user:User.find(1),secondary_character: Faker::Name.first_name)
 end
 puts "DONE"
 

@@ -1,0 +1,8 @@
+<%=current_user.email%> Abonnement type : <%=current_user.abonnement%>
+<p> First name = <%=current_user.first_name%>  Last name = <%=current_user.last_name%>
+<button onclick="/users/profile">
+      Edit profile
+    </button>
+<div>
+    <%= render @stories %>
+</div>

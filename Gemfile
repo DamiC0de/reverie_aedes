@@ -6,7 +6,7 @@ ruby "3.0.0"
 gem 'faker'
 
 gem "openai"
-gem "dotenv"
+gem 'dotenv-rails'
 
 gem 'rest-client'
 

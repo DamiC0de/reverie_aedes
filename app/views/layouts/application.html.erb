@@ -1,8 +1,21 @@
-<%= render'layouts/header'%>
+<%= render'layouts/head'%>
 <body>
-  <%= render 'layouts/navbar'%>
-  <%= yield %>
-  <%= render'layouts/footer'%>
+  <div class="container">
+    <div class="main-content">
+      <header>
+        <%= render 'layouts/navbar'%>
+      </header>
+      <main> 
+        <%= yield %>
+      </main>
+    </div>
+    <footer>
+      <%= render'layouts/footer'%>
+    </footer>  
+  </div>
+
+  
+
   <%= javascript_include_tag 'manifest', 'data-turbolinks-track': 'reload' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%# <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>

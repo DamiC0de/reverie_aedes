@@ -7,6 +7,7 @@ gem 'faker'
 
 gem "openai"
 gem 'dotenv-rails'
+gem 'letter_opener'
 
 gem 'rest-client'
 

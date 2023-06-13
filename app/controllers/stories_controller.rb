@@ -16,6 +16,7 @@ class StoriesController < ApplicationController
   
     def show
       @story = Story.find(params[:id])
+      @openai_input = @story.generate_openai_input
     end
   
     private
@@ -23,5 +24,7 @@ class StoriesController < ApplicationController
     def story_params
       params.require(:story).permit(:theme, :age, :name, :secondary_character, :fav_object)
     end
+
+    
   end
   

@@ -1,8 +1,8 @@
 <%= render'layouts/header'%>
-  <body>
+<body>
   <%= render 'layouts/navbar'%>
-    <%= yield %>
-<%= render'layouts/footer'%>
-  </body>
-  
+  <%= yield %>
+  <%= render'layouts/footer'%>
+  <%= javascript_include_tag 'manifest', 'data-turbolinks-track': 'reload' %>
+</body>
 </html>

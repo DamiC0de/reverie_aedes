@@ -1,24 +1,8 @@
-<p>
-  <strong>Thème :</strong>
-  <%= @story.theme %>
-</p>
+<h1><%= @story.title %></h1>
+<p><%= @story.content %></p>
 
-<p>
-  <strong>Âge :</strong>
-  <%= @story.age %>
-</p>
+<%= form_with(model: @story, method: :patch) do |form| %>
+  <%= form.hidden_field :content, value: @story.content %>
+  <%= form.submit "Save Story", class: "btn btn-primary" %>
+<% end %>
 
-<p>
-  <strong>Personnage principal :</strong>
-  <%= @story.name %>
-</p>
-
-<p>
-  <strong>Personnage secondaire :</strong>
-  <%= @story.secondary_character %>
-</p>
-
-<p>
-  <strong>Objet fétiche :</strong>
-  <%= @story.favourite_object %>
-</p>

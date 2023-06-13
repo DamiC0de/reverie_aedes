@@ -1,17 +1,17 @@
 <nav class="navbar">
-<%= link_to root_path do %>
-  <div class="logo"></div>
-<% end %>
-<ul div class="country-icons">
-    <li><a href="#" id="uk"></a></li>
-    <li><a href="#" id="fr"></a></li>
-</ul>
+  <%= link_to root_path do %>
+    <div class="logo"></div>
+  <% end %>
+  <ul class="country-icons">
+      <li><a href="#" id="uk"></a></li>
+      <li><a href="#" id="fr"></a></li>
+  </ul>
   <ul class="navbar-nav">
   <% if user_signed_in? %>
       <li><%= link_to "Disconnect", destroy_user_session_path, method: :delete %></li>
-      <li><a href="#">Saved Story</a></li>
-      <li><a href="#">New Story</a></li>
-      <li><a href="#">Home</a></li>
+      <li><%= link_to "Saved Stories", stories_path %></li> 
+      <li><%= link_to "New Story", new_story_path %></li> 
+      <li><%= link_to "Home", root_path %></li>
     <% else %>
       <li><%= link_to "Subscribe", new_user_registration_path %></li>
       <li><%= link_to "Login", new_user_session_path %></li>

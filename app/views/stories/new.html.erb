@@ -1,18 +1,18 @@
 <%= form_for @story do |f| %>
   <%= f.label :theme %>
-  <%= f.select :theme, ["Theme 1", "Theme 2", "Theme 3"] %>
+  <%= f.select :theme, ["Fairy Tales", "Sci-Fi", "Dongeon and Dragons"] %>
   
   <%= f.label :age %>
   <%= f.number_field :age %>
   
   <%= f.label :main_character %>
-  <%= f.text_field :main_character %>
+  <%= f.text_field :name %>
 
   <%= f.label :secondary_character %>
   <%= f.text_field :secondary_character %>
 
-  <%= f.label :favourite_object %>
-  <%= f.text_field :favourite_object %>
+  <%= f.label :fav_object %>
+  <%= f.text_field :fav_object %>
   
-  <%= f.submit "Générer Histoire" %>
+  <%= f.submit "Generate History" %>
 <% end %>

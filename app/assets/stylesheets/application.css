@@ -291,15 +291,64 @@ footer {
     min-height: 100vh; 
     }
 
-.main-content {
-    flex: 1;
-} 
 
 main {
   margin-bottom: 12px;
 }
 
+.main-content {
+  flex: 1;
+} 
 
+/* Ajouter ce CSS à la fin de votre fichier CSS */
 
-  
-  
+.hamburger {
+  display: none;
+  color: #fff; /* La couleur du bouton hamburger */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.navbar-nav.vertical {
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none; /* Ajout de cette ligne */
+}
+
+.navbar-nav.vertical li {
+  float: none; /* Ajoutez cette ligne */
+  display: block;
+  margin: 5px 0;
+}
+
+.navbar-nav.vertical li a {
+  color: #000;
+}

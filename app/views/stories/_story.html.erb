@@ -1,5 +1,8 @@
 <div>
   <h2><%= link_to story.title, story_path(story) %></h2>
   <p>Créé le <%= story.created_at.to_date %></p>
-  <%= button_to 'Supprimer', story_path(story), method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cette histoire?' } %>
+ <%= button_to 'Supprimer', story_path(story), method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cette histoire?' } %>
+
+
+
 </div>

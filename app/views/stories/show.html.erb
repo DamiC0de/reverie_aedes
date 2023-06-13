@@ -3,6 +3,5 @@
 
 <%= form_with(model: @story, method: :patch) do |form| %>
   <%= form.hidden_field :content, value: @story.content %>
-  <%= form.submit "Save Story", class: "btn btn-primary" %>
+  <p>L'histoire a été sauvegardée</p>
 <% end %>
-

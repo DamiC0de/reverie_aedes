@@ -30,6 +30,12 @@ class Story < ApplicationRecord
         )
       
         story_text = JSON.parse(response.body)['choices'][0]['text']
+
+        # Enlever les espaces blancs au début et à la fin
+        story_text = story_text.strip
+
+        # Extraire le titre de l'histoire du texte
+        self.title, story_text = story_text.split("\n", 2)
       
         # Générer une conclusion en utilisant la dernière phrase comme invite
         last_sentence = story_text.split(". ").last
@@ -49,14 +55,14 @@ class Story < ApplicationRecord
         )
       
         conclusion = JSON.parse(response.body)['choices'][0]['text']
-      
+        
         story_text + conclusion
       end
       
 
       
     def generate_openai_input
-      "Raconte moi une histoire pour un enfant de #{age} ans dont le thème est #{theme}, le personnage principal s'appelle #{name}, le personnage secondaire s'appelle #{secondary_character} et son objet fétiche s'appelle #{fav_object}."
+        "Raconte moi une histoire pour un enfant de #{age} ans dont le thème est #{theme}, le personnage principal s'appelle #{name}, le personnage secondaire s'appelle #{secondary_character} et son objet fétiche s'appelle #{fav_object}. Commence par le titre de l'histoire."
     end
   end
   

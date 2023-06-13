@@ -10,10 +10,12 @@ body {
     color: #fff;
   }
 
-/* Fairy Gif */
+/* Texte  */
 
+.title {
+  margin-left: 50px; /* Ajustez cette valeur pour décaler le titre de la quantité souhaitée */
+}
 
-  
 
 /* Navbar */
 
@@ -138,6 +140,11 @@ body {
   font-size: 16px;
 }
 
+.field input, .field select {
+  height: 2rem; /* Ajustez cette valeur à votre convenance */
+}
+
+
 .actions {
   display: flex;
   justify-content: center;
@@ -203,6 +210,52 @@ h2#login {
   padding: 20px;
   width: 100%;
   max-width: 500px; /* vous pouvez ajuster cette valeur */
+}
+
+
+/* Cards */
+
+.story-card {
+  width: 80%;
+  margin: 5% auto;
+  background-color: rgba(255,255,255,0.8); /* Changer en fonction de votre préférence */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15); /* Changer en fonction de votre préférence */
+  color: #000b12;
+}
+
+.story-summary {
+  width: 80%;
+  margin: 2% auto;
+  background-color: rgba(255,255,255,0.8); /* Changer en fonction de votre préférence */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15); /* Changer en fonction de votre préférence */
+  color: #000000;
+}
+
+.story-summary h2 {
+  font-size: 2rem; /* Ajustez en fonction de vos préférences */
+  margin-bottom: 1rem;
+}
+
+.story-summary p {
+  color: #888; /* Couleur du texte */
+  margin-bottom: 1rem;
+}
+
+.story-summary .delete-button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #01588d; /* Couleur de fond du bouton */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.story-summary .delete-button:hover {
+  background-color: #72b3da; /* Couleur de fond du bouton au survol */
 }
 
 

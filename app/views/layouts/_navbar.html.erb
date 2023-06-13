@@ -9,6 +9,7 @@
   <ul class="navbar-nav">
   <% if user_signed_in? %>
       <li><%= link_to "Disconnect", destroy_user_session_path, method: :delete %></li>
+      <li><%= link_to "My stories", "/pages/profile" %></li>
       <li><%= link_to "Saved Stories", stories_path %></li> 
       <li><%= link_to "New Story", new_story_path %></li> 
       <li><%= link_to "Home", root_path %></li>

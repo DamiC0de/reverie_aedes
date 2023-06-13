@@ -232,11 +232,8 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
-
-  faker
-
   dotenv
-
+  faker
   jbuilder
   jsbundling-rails
   openai

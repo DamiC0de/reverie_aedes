@@ -18,3 +18,4 @@ print "Creating 10 stories"
     Story.create(title: title,theme:"fantasy",age: rand(5..10),name: name,fav_object: object, content: Faker::Lorem.sentences  ,user:User.find(1),secondary_character: Faker::Name:.first_name)
 end
 puts "DONE"
+

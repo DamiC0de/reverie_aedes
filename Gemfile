@@ -7,6 +7,7 @@ gem 'faker'
 
 gem "openai"
 gem 'dotenv-rails'
+gem 'letter_opener'
 
 gem 'rest-client'
 
@@ -38,6 +39,12 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 gem 'devise'
+
+gem 'bootstrap'
+
+gem 'font-awesome-sass'
+
+gem 'jquery-rails'
 
 
 # Use Redis adapter to run Action Cable in production

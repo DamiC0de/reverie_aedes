@@ -5,7 +5,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :stories
   has_many :subscriptions
+  after_create :welcome_send
 
+  def welcome_send
+    UserMailer.welcome_email(self).deliver_now
+  end
   def subscribed?
     subscribed = false
     subscriptions.each do |sub|
@@ -15,4 +19,7 @@ class User < ApplicationRecord
       end
     end
   end
+
+
+
 end

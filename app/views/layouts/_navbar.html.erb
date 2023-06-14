@@ -8,14 +8,16 @@
   </ul>
   <ul class="navbar-nav">
   <% if user_signed_in? %>
-      <li><%= link_to "Disconnect", destroy_user_session_path, method: :delete %></li>
-      <li><%= link_to "My stories", "/pages/profile" %></li>
-      <li><%= link_to "Saved Stories", stories_path %></li> 
       <li><%= link_to "New Story", new_story_path %></li> 
-      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Saved Stories", stories_path %></li> 
+      <li><%= link_to "My stories", "/pages/profile" %></li>
+      <li><%= link_to "Disconnect", destroy_user_session_path, method: :get %></li>
+      
     <% else %>
-      <li><%= link_to "Subscribe", new_user_registration_path %></li>
       <li><%= link_to "Login", new_user_session_path %></li>
+      <li><%= link_to "Subscribe", new_user_registration_path %></li>
     <% end %>
   </ul>
+  <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+  
 </nav>

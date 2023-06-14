@@ -1,18 +1,37 @@
-<%= form_for @story do |f| %>
-  <%= f.label :theme %>
-  <%= f.select :theme, ["Fairy Tales", "Sci-Fi", "Dongeon and Dragons"] %>
-  
-  <%= f.label :age %>
-  <%= f.number_field :age %>
-  
-  <%= f.label :main_character %>
-  <%= f.text_field :name %>
+<div id="loading-screen" style="display: none;">
+  <p>Histoire en cours de création...</p>
+</div>
 
-  <%= f.label :secondary_character %>
-  <%= f.text_field :secondary_character %>
 
-  <%= f.label :fav_object %>
-  <%= f.text_field :fav_object %>
-  
-  <%= f.submit "Generate History" %>
-<% end %>
+<div class="form-container">
+  <%= form_for @story, html: { class: 'form-box' } do |f| %>
+    <div class="field">
+      <%= f.label :theme %>
+      <%= f.select :theme, ["Fairy Tales", "Sci-Fi", "Dongeon and Dragons"] %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :age %>
+      <%= f.number_field :age %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :main_character %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :secondary_character %>
+      <%= f.text_field :secondary_character %>
+    </div>
+
+    <div class="field">
+      <%= f.label :fav_object %>
+      <%= f.text_field :fav_object %>
+    </div>
+    
+    <div class="actions">
+      <%= f.submit "Generate History", class: 'submit-button' %>
+    </div>
+  <% end %>
+</div>

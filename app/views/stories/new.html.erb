@@ -2,32 +2,31 @@
   <p>Histoire en cours de création<span>.</span><span>.</span><span>.</span></p>
 </div>
 
-
 <div class="form-container">
   <%= form_for @story, html: { class: 'form-box' } do |f| %>
     <div class="field">
       <%= f.label :theme %>
-      <%= f.select :theme, ["Fairy Tales", "Sci-Fi", "Dongeon and Dragons"] %>
+      <%= f.select :theme, ["Fairy Tales", "Sci-Fi", "Dongeon and Dragons"], {}, { required: true } %>
     </div>
     
     <div class="field">
       <%= f.label :age %>
-      <%= f.number_field :age %>
+      <%= f.number_field :age, required: true %>
     </div>
     
     <div class="field">
       <%= f.label :main_character %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, required: true %>
     </div>
 
     <div class="field">
       <%= f.label :secondary_character %>
-      <%= f.text_field :secondary_character %>
+      <%= f.text_field :secondary_character, required: true %>
     </div>
 
     <div class="field">
       <%= f.label :fav_object %>
-      <%= f.text_field :fav_object %>
+      <%= f.text_field :fav_object, required: true %>
     </div>
     
     <div class="actions">

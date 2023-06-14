@@ -61,7 +61,11 @@ body {
   }
   
   .navbar-nav a:hover {
-    color: #2674f2;
+    color: #007bff;
+  }
+
+  .navbar-nav a.active {
+    color: #007bff;
   }
 
   /* logo */
@@ -360,7 +364,7 @@ main {
   flex: 1;
 } 
 
-/* Ajouter ce CSS à la fin de votre fichier CSS */
+/* Mobile display */
 
 .hamburger {
   display: none;

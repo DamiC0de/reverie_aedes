@@ -289,7 +289,11 @@ h2#login {
 }
 
 .story-summary {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
   margin: 2% auto;
   background-color: rgba(255,255,255,0.8); /* Changer en fonction de votre préférence */
   padding: 2rem;
@@ -306,6 +310,7 @@ h2#login {
 .story-summary p {
   color: #888; /* Couleur du texte */
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .story-summary .delete-button {
@@ -315,6 +320,7 @@ h2#login {
   background-color: #01588d; /* Couleur de fond du bouton */
   padding: 10px 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .story-summary .delete-button:hover {

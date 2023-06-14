@@ -1,8 +1,28 @@
-<%=current_user.email%> Abonnement type : <%=current_user.abonnement%>
+<%if current_user.subscriptions.any?%>
+    <% exp = current_user.subscriptions.all.sample %>
+    <% current_user.subscriptions.each do |sub|%>
+        <% if sub.active? %>
+            <%if sub.expiration_date >= exp.expiration_date %>
+                <%exp = sub%>
+            <%end%>
+        <%end%>
+    <%end%>
+<%end%>
+<%=current_user.email%>
+<%if current_user.subscriptions.any?%>
+    <%if exp.active?%>
+        Time remaining Subscription : 
+        <%= distance_of_time_in_words(Time.now,exp.expiration_date,options = {include_seconds: true})%>
+    <%else%>
+        Your subscription expired <%= distance_of_time_in_words(exp.expiration_date,Time.now,options = {include_seconds: true})%> ago
+    <%end%>
+<%else%>
+    You aren't subscribed
+<%end%>
+
+
 <p> First name = <%=current_user.first_name%>  Last name = <%=current_user.last_name%>
-<button onclick="/users/profile">
-      Edit profile
-    </button>
+<% button_to 'Edit profile', "/users/edit"%>
 <div>
     <%= render @stories %>
 </div>

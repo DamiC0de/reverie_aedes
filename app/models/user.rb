@@ -10,15 +10,10 @@ class User < ApplicationRecord
   def welcome_send
     UserMailer.welcome_email(self).deliver_now
   end
+
   def subscribed?
-    subscribed = false
-    subscriptions.each do |sub|
-      if sub.active?
-        puts "subscri"
-        subscribed = true
-      end
+    
     end
-  end
 
 
 

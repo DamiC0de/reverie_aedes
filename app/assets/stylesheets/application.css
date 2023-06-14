@@ -126,8 +126,8 @@ body {
     
   
 
+/* Loading */
 
-/* Forms */
 
 #loading-screen {
   position: fixed;
@@ -143,6 +143,39 @@ body {
   color: white;
   font-size: 2rem;
 }
+
+#loading-screen span {
+  opacity: 0;
+  animation: loading-dots 1.4s infinite;
+}
+
+#loading-screen span:nth-child(1) {
+  animation: loading-dots 1.4s infinite;
+}
+
+#loading-screen span:nth-child(2) {
+  animation: loading-dots 1.4s 0.5s infinite;
+}
+
+#loading-screen span:nth-child(3) {
+  animation: loading-dots 1.4s 1s infinite;
+}
+
+@keyframes loading-dots {
+  0% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/* Forms */
 
 
 .form-container {

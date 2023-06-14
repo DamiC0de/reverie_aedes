@@ -19,7 +19,9 @@ body {
 /* Texte  */
 
 .title {
-  margin-left: 50px; /* Ajustez cette valeur pour décaler le titre de la quantité souhaitée */
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -75,13 +77,14 @@ body {
     }
 
     .country-icons {
-        display: flex;
-        align-items: center;
-        float: right;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+      display: flex;
+      justify-content: center; /* aligne les éléments horizontalement au centre */
+      align-items: center; /* aligne les éléments verticalement au centre */
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
 
     .country-icons li {
         display: inline-block;
@@ -100,6 +103,7 @@ body {
         display: block;
         width: 30px; /* ajustez en fonction de la taille de votre icône */
         height: 30px; /* ajustez en fonction de la taille de votre icône */
+        margin-left: 4rem;
     }
 
     #uk:hover {
@@ -113,12 +117,14 @@ body {
         display: block;
         width: 30px; /* ajustez en fonction de la taille de votre icône */
         height: 30px; /* ajustez en fonction de la taille de votre icône */
+        margin-right: 4rem;
     }
 
     #fr:hover {
         background-image: url('assets/icons/fr-hover.png');
     }
     
+  
 
 
 /* Forms */
@@ -229,6 +235,7 @@ h2#login {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.15); /* Changer en fonction de votre préférence */
   color: #000b12;
+  margin-top: 6rem;
 }
 
 .story-summary {
@@ -328,6 +335,8 @@ main {
 
   .hamburger {
     display: block;
+    background-color: rgba(0,0,0,0);
+    margin-left: 10rem;
   }
 }
 

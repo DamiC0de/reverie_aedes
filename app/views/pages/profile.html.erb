@@ -8,7 +8,11 @@
         <%end%>
     <%end%>
 <%end%>
-<%=current_user.email%>
+<%=current_user.email%><% if current_user.subscribed?%>
+ Currently subscribed
+<% else %>
+Not subscribed
+<%end %>
 <%if current_user.subscriptions.any?%>
     <%if exp.active?%>
         Time remaining Subscription : 

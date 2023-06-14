@@ -12,8 +12,18 @@ class User < ApplicationRecord
   end
 
   def subscribed?
-    
+    if subscriptions.any?
+      exp = subscriptions.all.sample
+      subscriptions.each do |sub|
+        if sub.expiration_date > exp.expiration_date
+          exp = sub
+        end
+      end
+      if exp.expiration_date > Time.now
+        return true
+      end
     end
+  end
 
 
 

@@ -10,12 +10,17 @@ class User < ApplicationRecord
   def welcome_send
     UserMailer.welcome_email(self).deliver_now
   end
+
   def subscribed?
-    subscribed = false
-    subscriptions.each do |sub|
-      if sub.active?
-        puts "subscri"
-        subscribed = true
+    if subscriptions.any?
+      exp = subscriptions.all.sample
+      subscriptions.each do |sub|
+        if sub.expiration_date > exp.expiration_date
+          exp = sub
+        end
+      end
+      if exp.expiration_date > Time.now
+        return true
       end
     end
   end

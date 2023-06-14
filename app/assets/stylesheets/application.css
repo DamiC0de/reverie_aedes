@@ -385,6 +385,63 @@ main {
   padding: 0;
 }
 
+
+
+
+/* Buttons */
+
+.device-loginSubscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+
+.signIn-nav-button {
+  display: none;
+  background-image: url(assets/buttons/blue_button.png);
+  background-size: cover; /* Assurez-vous que l'image couvre tout l'espace disponible */
+  width: 316px; /* Ajustez selon la taille souhaitée pour le bouton */
+  height: 122px; /* Ajustez selon la taille souhaitée pour le bouton */
+  font-family: 'Ruda-Bold', Fallback, sans-serif;
+  font-size: 3rem;
+  color: rgb(255, 255, 255); /* Ajustez selon la couleur de texte souhaitée */
+  text-align: center;
+  line-height: 6.6rem; /* Cela centrera verticalement le texte. Ajustez-le à la même valeur que la hauteur du bouton */
+}
+
+.signUp-nav-button {
+  display: none;
+  background-image: url(assets/buttons/purple_button.png);
+  background-size: cover; /* Assurez-vous que l'image couvre tout l'espace disponible */
+  width: 316px; /* Ajustez selon la taille souhaitée pour le bouton */
+  height: 122px; /* Ajustez selon la taille souhaitée pour le bouton */
+  font-family: 'Ruda-Bold', Fallback, sans-serif;
+  font-size: 3rem;
+  color: rgb(255, 255, 255); /* Ajustez selon la couleur de texte souhaitée */
+  text-align: center;
+  line-height: 6.6rem; /* Cela centrera verticalement le texte. Ajustez-le à la même valeur que la hauteur du bouton */
+  margin-top: 6rem;
+}
+
+.about-nav-button {
+  display: none;
+  background-image: url(assets/buttons/yellow_button.png);
+  background-size: cover; /* Assurez-vous que l'image couvre tout l'espace disponible */
+  width: 182px; /* Ajustez selon la taille souhaitée pour le bouton */
+  height: 71px; /* Ajustez selon la taille souhaitée pour le bouton */
+  font-family: 'Ruda-Bold', Fallback, sans-serif;
+  font-size: 2rem;
+  color: rgb(255, 255, 255); /* Ajustez selon la couleur de texte souhaitée */
+  text-align: center;
+  line-height: 4.4rem; /* Cela centrera verticalement le texte. Ajustez-le à la même valeur que la hauteur du bouton */
+  margin-top: 6rem;
+}
+
+
+
 @media screen and (max-width: 1100px) {
   .navbar-nav {
     display: none;
@@ -394,6 +451,17 @@ main {
     display: block;
     background-color: rgba(0,0,0,0);
     margin-left: 10rem;
+  }
+
+  .signIn-nav-button {
+    display: block;
+  }
+
+  .signUp-nav-button {
+    display: block;
+  }
+  .about-nav-button {
+    display: block;
   }
 }
 
@@ -417,4 +485,16 @@ main {
 
 .navbar-nav.vertical li a {
   color: #000;
+}
+
+
+
+
+
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Ruda-Bold';
+  src: font-url('Ruda-Bold.ttf') format('truetype');
 }

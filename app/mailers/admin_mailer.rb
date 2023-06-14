@@ -1,5 +1,5 @@
 class AdminMailer < ApplicationMailer
-    default :from => 'bardic-reveries@gmail.com'
+    default :from => 'bardic-reveries@yopmail.com'
 
     def confirmation_email(order)
         #on récupère l'instance order pour ensuite pouvoir la passer à la view en @user

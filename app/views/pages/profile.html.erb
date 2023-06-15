@@ -30,3 +30,28 @@ Not subscribed
 <div>
     <%= render @stories %>
 </div>
+
+<%if current_user.orders.any? %>
+    <table>
+        <thead>
+            <tr>
+                <th>OrderID</th>
+                <th>Date of order</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% (current_user.orders).all.reverse_each do |order| %>
+                <tr>
+                    <td><%=order.id%> 
+                    <td>Ordered the  <%= order.created_at.strftime('%d/%m/%Y') %> at <%= order.created_at.strftime('%H:%M') %> </td>
+                    <td>
+                        <% sub = order.subscription%>
+                        <%= distance_of_time_in_words(sub.start_date,sub.expiration_date,options = {include_seconds: true})%>
+                    </td>
+                    <td>
+                </tr>
+            <%end%>
+        </tbody>
+    </table>
+<%end%>

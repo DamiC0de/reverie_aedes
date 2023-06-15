@@ -7,4 +7,3 @@ db/schema.rb linguist-generated
 vendor/* linguist-vendored
 
 # Ignore the .env file
-.env

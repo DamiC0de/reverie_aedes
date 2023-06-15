@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :stories
   has_many :subscriptions
   after_create :welcome_send
+  has_many :orders
 
   def welcome_send
     UserMailer.welcome_email(self).deliver_now

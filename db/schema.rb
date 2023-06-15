@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_14_084039) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_15_094952) do
+  create_table "orders", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "subscription_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subscription_id"], name: "index_orders_on_subscription_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
   create_table "stories", force: :cascade do |t|
     t.string "title"
     t.string "theme"
@@ -43,13 +52,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_14_084039) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "abonnement", default: "none"
-    t.string "first_name", default: "unknown"
-    t.string "last_name", default: "unknown"
+    t.string "first_name"
+    t.string "last_name"
     t.datetime "end_of_abo"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "orders", "subscriptions"
+  add_foreign_key "orders", "users"
   add_foreign_key "stories", "users"
   add_foreign_key "subscriptions", "users"
 end
